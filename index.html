@@ -1,128 +1,187 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapworks Studio | Advanced Geospatial Intelligence & Interactive Cartography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #0b0f12; color: #e2e8f0; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        .font-tech { font-family: 'Space Grotesk', sans-serif; }
+        .text-neon { color: #39ff14; }
+        .bg-neon { background-color: #39ff14; }
+        .border-neon { border-color: #39ff14; }
+        .glass-panel { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .reveal { transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; transform: scale(0.95) translateY(40px); }
+        .reveal.active { opacity: 1; transform: scale(1) translateY(0); }
+        .grid-bg { background-image: linear-gradient(rgba(57, 255, 20, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(57, 255, 20, 0.03) 1px, transparent 1px); background-size: 40px 40px; }
+    </style>
 </head>
-<body>
+<body class="antialiased grid-bg">
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <nav class="fixed w-full z-50 py-6 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass-panel rounded-full px-8 py-4 shadow-2xl">
+            <div class="font-tech text-xl font-bold tracking-tight flex items-center gap-2">
+                <div class="w-3 h-3 bg-neon rounded-full animate-pulse"></div>
+                MAPWORKS<span class="text-neon font-light">STUDIO</span>
+            </div>
+            <div class="hidden lg:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.3em]">
+                <a href="#intelligence" class="hover:text-neon transition">Intelligence</a>
+                <a href="#capabilities" class="hover:text-neon transition">Capabilities</a>
+                <a href="#framework" class="hover:text-neon transition">Data Architecture</a>
+                <a href="#contact" class="bg-white text-black px-6 py-2 rounded-full font-tech font-bold hover:bg-neon transition">Initialize Liaison</a>
+            </div>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <section class="min-h-screen flex items-center justify-center relative px-6 pt-24">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.pexels.com/photos/4194850/pexels-photo-4194850.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" class="w-full h-full object-cover grayscale brightness-50" alt="Global Grid Analytics">
+        </div>
+        <div class="relative z-10 text-center max-w-5xl">
+            <span class="text-neon font-tech text-xs uppercase tracking-[0.5em] mb-6 block border border-neon/30 px-4 py-1.5 rounded-full inline-block bg-neon/5">Geospatial Systems Activated</span>
+            <h1 class="font-tech text-5xl md:text-8xl font-bold leading-tight mb-8 tracking-tighter text-white">
+                Mapping the <br><span class="text-transparent" style="-webkit-text-stroke: 1.5px #39ff14;">Invisible Architecture.</span>
+            </h1>
+            <p class="text-slate-400 text-sm md:text-base max-w-xl mx-auto leading-loose uppercase tracking-widest font-light mb-12">
+                Interactive Cartography, Digital Twin Integration, and Multidimensional Spatial Analysis.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#capabilities" class="bg-neon text-black font-tech font-bold uppercase text-xs tracking-widest px-10 py-5 rounded-xl hover:bg-white transition">Explore Matrix</a>
+                <a href="tel:15096403747" class="glass-panel text-white font-tech uppercase text-xs tracking-widest px-10 py-5 rounded-xl hover:border-neon transition">+1 509-640-3747</a>
+            </div>
+        </div>
+    </section>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+    <section id="intelligence" class="py-44 px-8 bg-[#0e1317]/90 relative">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
+            <div class="reveal">
+                <span class="text-neon font-tech text-xs tracking-widest uppercase block mb-4">[ 01 // CORE ORIENTATION ]</span>
+                <h2 class="font-tech text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">Deciphering spatial complexity into fluid interfaces.</h2>
+                <p class="text-slate-400 leading-relaxed text-base font-light mb-8">
+                    Mapworks Studio engineers dynamic geospatial ecosystems that transform hyper-dense coordinates into intuitive visual architecture. We supply organizations with high-fidelity telemetry rendering, interactive map vectors, and deep predictive spatial intelligence data layouts.
+                </p>
+                <div class="h-[1px] w-full bg-gradient-to-r from-neon to-transparent"></div>
+            </div>
+            <div class="relative reveal">
+                <img src="https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-3xl border border-white/10 shadow-2xl w-full h-[500px] object-cover filter hue-rotate-[60px] contrast-125" alt="Satellite Data Overlay">
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+    <section id="capabilities" class="py-44 px-8 bg-[#0b0f12]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-32 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+                <div>
+                    <span class="text-neon font-tech text-xs tracking-widest uppercase block mb-4">[ 02 // MATRIX CHANNELS ]</span>
+                    <h2 class="font-tech text-5xl font-bold text-white tracking-tighter">OPERATIONAL CAPABILITIES</h2>
+                </div>
+                <div class="text-slate-500 font-tech text-xs tracking-widest uppercase">System Framework v4.26</div>
+            </div>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-panel p-10 rounded-3xl hover:border-neon transition duration-500 reveal">
+                    <div class="overflow-hidden rounded-xl mb-8 h-48">
+                        <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover filter brightness-75 contrast-125" alt="Cartography Network">
+                    </div>
+                    <h3 class="font-tech text-xl font-bold text-white mb-4">Interactive Cartography</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed tracking-wider uppercase">Next-generation vector tiles and spatial canvas layering built for seamless cross-platform rendering.</p>
+                </div>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+                <div class="glass-panel p-10 rounded-3xl hover:border-neon transition duration-500 reveal">
+                    <div class="overflow-hidden rounded-xl mb-8 h-48">
+                        <img src="https://images.pexels.com/photos/3183156/pexels-photo-3183156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover filter brightness-75 contrast-125" alt="Data Analytics">
+                    </div>
+                    <h3 class="font-tech text-xl font-bold text-white mb-4">Geospatial Analytics</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed tracking-wider uppercase">Advanced data harvesting techniques applied to macro-scale demographic, topography, and real-time transit streams.</p>
+                </div>
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+                <div class="glass-panel p-10 rounded-3xl hover:border-neon transition duration-500 reveal">
+                    <div class="overflow-hidden rounded-xl mb-8 h-48">
+                        <img src="https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover filter brightness-75 contrast-125" alt="Digital Twin Modeling">
+                    </div>
+                    <h3 class="font-tech text-xl font-bold text-white mb-4">Digital Twin Engineering</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed tracking-wider uppercase">Constructing virtual simulation models of architectural infrastructure for long-form environmental stress tests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="py-44 px-8 bg-gradient-to-b from-[#0b0f12] via-[#12181d] to-[#0b0f12] text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10 reveal">
+            <span class="text-neon text-[10px] font-tech uppercase tracking-[0.6em] mb-6 block">Computational Cartography</span>
+            <h2 class="font-tech text-4xl md:text-7xl font-bold tracking-tight text-white leading-none">
+                "We organize the earth's dimensional data structures into actionable intuition."
+            </h2>
+        </div>
+    </section>
+
+    <section id="framework" class="py-44 px-8 bg-[#0b0f12]">
+        <div class="max-w-4xl mx-auto glass-panel p-12 md:p-20 rounded-[35px] border-neon/10 shadow-3xl reveal">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-4">
+                <div>
+                    <h2 class="font-tech text-2xl font-bold tracking-tight text-white uppercase">Data Privacy Protocol</h2>
+                    <p class="text-slate-500 text-[9px] font-tech tracking-widest uppercase mt-1">Geo-Spatial Infrastructure Protection</p>
+                </div>
+                <div class="text-neon font-tech text-xs border border-neon/30 px-3 py-1 rounded bg-neon/5 font-bold">SECURITY: ACTIVE</div>
+            </div>
+            
+            <div class="h-64 overflow-y-scroll pr-6 text-[11px] font-tech uppercase tracking-[0.2em] leading-loose text-slate-500">
+                <p class="text-white font-bold mb-4">LAST MODIFIED MATRIX CONTEXT: MAY 16, 2026</p>
+                <p class="mb-4">Mapworks Studio ("The Studio") establishes this security governance regime to clarify methods regarding user transmission metrics and geographic coordinate integrity protocols.</p>
+                
+                <h4 class="text-neon font-bold mt-6 mb-2">> 01. SECURE TELEMETRY RECORDING</h4>
+                <p class="mb-4">All client contact registers (contact@mapworksstudio.org) and dialing arrays (+1 509-640-3747) are contained exclusively on siloed database sectors. We deploy zero telemetry tracking across public channels.</p>
+                
+                <h4 class="text-neon font-bold mt-6 mb-2">> 02. CRYPTOGRAPHIC DATA RULES</h4>
+                <p class="mb-4">Map layers, visual datasets, and coordinate coordinates generated inside our network architecture undergo continuous hardware encryption loops. No monetization models or third-party syndication channels are tolerated.</p>
+                
+                <h4 class="text-neon font-bold mt-6 mb-2">> 03. COMPLIANCE JURISDICTION</h4>
+                <p>All visual applications and telemetry modules adhere fully to structural data safety protocols and federal security declarations.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="pt-44 pb-20 px-8 bg-[#070a0c] border-t border-white/5 text-white">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24">
+            <div>
+                <h2 class="font-tech text-5xl font-bold tracking-tighter mb-12 text-white">INITIALIZE <br><span class="text-neon">CONNECTION.</span></h2>
+                <div class="space-y-8 font-tech">
+                    <div>
+                        <span class="text-slate-600 text-[9px] font-bold tracking-[0.5em] block mb-2 uppercase">Secure Digital Inbox</span>
+                        <a href="mailto:contact@mapworksstudio.org" class="text-2xl font-light hover:text-neon transition tracking-tight">contact@mapworksstudio.org</a>
+                    </div>
+                    <div>
+                        <span class="text-slate-600 text-[9px] font-bold tracking-[0.5em] block mb-2 uppercase">Telemetry Terminal Link</span>
+                        <a href="tel:15096403747" class="text-2xl font-light hover:text-neon transition tracking-tight">+1 509-640-3747</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:text-right flex flex-col justify-end">
+                <span class="text-slate-600 text-[9px] font-bold tracking-[0.4em] block mb-3 uppercase">Matrix Grid Origin</span>
+                <p class="font-tech text-2xl font-light leading-relaxed tracking-tight text-slate-300">
+                    Mapworks Studio Systems Inc.<br>
+                    Spatial Intelligence Hub<br>
+                    United States Operations
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-32 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between text-[9px] font-tech tracking-[0.4em] text-slate-600 uppercase font-bold">
+            <p>&copy; 2026 MAPWORKS STUDIO LLC. GEOSPATIAL MAP DATA STRUCTURED.</p>
+            <p>SYSTEM ACCESS: STABLE</p>
+        </div>
+    </footer>
+
+    <script>
+        // High-Performance Intersection Observer for Scale Reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
